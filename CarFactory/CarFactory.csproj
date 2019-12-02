@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyPlant\ModelSAssemblyPlant.cs" />
-    <Compile Include="AssemblyPlant\ModelYAssemblyPlant.cs" />
+    <Compile Include="Plants\ModelSAssemblyPlant.cs" />
+    <Compile Include="Plants\ModelYAssemblyPlant.cs" />
     <Compile Include="CarParts\Bodies\Body.cs" />
     <Compile Include="CarParts\Bodies\ModelYBody.cs" />
     <Compile Include="CarParts\Chassies\Chassis.cs" />
@@ -56,7 +56,7 @@
     <Compile Include="CarParts\Engines\ModelYEngine.cs" />
     <Compile Include="Cars\Car.cs" />
     <Compile Include="Factory.cs" />
-    <Compile Include="AssemblyPlant\AssemblyPlant.cs" />
+    <Compile Include="Plants\AssemblyPlant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
