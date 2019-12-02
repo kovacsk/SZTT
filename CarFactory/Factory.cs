@@ -37,6 +37,11 @@ namespace CarFactory
 
         public Car AssembleCar(Chassis chassis, Body body, Engine engine)
         {
+            chassis.Diagnostics();
+            body.Diagnostics();
+            engine.Diagnostics();
+
+
             return new Car(chassis, body, engine);
         }
     }

@@ -10,7 +10,7 @@ namespace CarFactory.CarParts.Engines
     {
         public override void Diagnostics()
         {
-            throw new NotImplementedException();
+            ProductionError.GetInstance().CarPartError();
         }
 
         public override void Make()
