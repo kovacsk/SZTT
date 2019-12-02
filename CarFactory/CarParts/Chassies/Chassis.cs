@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CarFactory.CarParts
 {
-    abstract class Chassis
+    abstract class Chassis : IDiagnostics
     {
+        public abstract void Diagnostics();
         public abstract void Make();
     }
 }

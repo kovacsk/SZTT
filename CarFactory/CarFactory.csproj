@@ -55,7 +55,7 @@
     <Compile Include="Cars\Car.cs" />
     <Compile Include="IDiagnostics.cs" />
     <Compile Include="Factory.cs" />
-    <Compile Include="Plants\AssemblyPlant.cs" />
+    <Compile Include="Plants\ManufacturingPlant.cs" />
     <Compile Include="ProductionError.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

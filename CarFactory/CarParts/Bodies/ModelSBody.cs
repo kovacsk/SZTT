@@ -8,6 +8,11 @@ namespace CarFactory.CarParts
 {
     class ModelSBody : Body
     {
+        public override void Diagnostics()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Make()
         {
             Console.WriteLine("ModelSBody done.");

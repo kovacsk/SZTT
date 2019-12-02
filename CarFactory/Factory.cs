@@ -15,17 +15,17 @@ namespace CarFactory
         private Body body;
         private Engine engine;
 
-        private AssemblyPlant assemblyPlant;
+        private ManufacturingPlant manufacturingPlant;
 
-        public void SetAssemblyPlant(AssemblyPlant ap)
+        public void SetAssemblyPlant(ManufacturingPlant ap)
         {
-            assemblyPlant = ap;
+            manufacturingPlant = ap;
         }
         public void InitAssemblyElements()
         {
-            chassis = assemblyPlant.CreateChassis();
-            body = assemblyPlant.CreateBody();
-            engine = assemblyPlant.CreateEngine();
+            chassis = manufacturingPlant.CreateChassis();
+            body = manufacturingPlant.CreateBody();
+            engine = manufacturingPlant.CreateEngine();
         }
 
         public void ProduceCarParts()

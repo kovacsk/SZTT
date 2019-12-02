@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace CarFactory.FactoryInterface
 {
-    interface AssemblyPlant
+    interface ManufacturingPlant
     {
         Chassis CreateChassis();
         Body CreateBody();
         Engine CreateEngine();
     }
-    class ModelYAssemblyPlant : AssemblyPlant
+    class ModelYAssemblyPlant : ManufacturingPlant
     {
         public Chassis CreateChassis() { return new ModelYChassis(); }
         public Body CreateBody() { return new ModelYBody(); }
@@ -24,7 +24,7 @@ namespace CarFactory.FactoryInterface
 
 
     }
-    class ModelSAssemblyPlant : AssemblyPlant
+    class ModelSAssemblyPlant : ManufacturingPlant
     {
         public Chassis CreateChassis() { return new ModelSChassis(); }
         public Body CreateBody() { return new ModelSBody(); }

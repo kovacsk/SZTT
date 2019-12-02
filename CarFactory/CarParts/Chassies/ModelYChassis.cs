@@ -8,6 +8,11 @@ namespace CarFactory.CarParts.Chassies
 {
     class ModelYChassis : Chassis
     {
+        public override void Diagnostics()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Make()
         {
             Console.WriteLine("ModelYChassis done.");
