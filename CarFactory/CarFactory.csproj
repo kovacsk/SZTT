@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Plants\ModelSAssemblyPlant.cs" />
-    <Compile Include="Plants\ModelYAssemblyPlant.cs" />
     <Compile Include="CarParts\Bodies\Body.cs" />
     <Compile Include="CarParts\Bodies\ModelYBody.cs" />
     <Compile Include="CarParts\Chassies\Chassis.cs" />
