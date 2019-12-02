@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarFactory.CarParts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace CarFactory.FactoryInterface
 {
     interface AssemblyPlant
     {
-
+        Chassis CreateChassis();
+        Body CraeteBody();
+        Engine CreateEngine();
     }
 }
