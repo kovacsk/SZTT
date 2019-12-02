@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CarFactory.CarParts
 {
-    class Body
+    abstract class Body
     {
+        public abstract void Make();
     }
 }

@@ -8,5 +8,9 @@ namespace CarFactory.CarParts
 {
     class ModelSBody : Body
     {
+        public override void Make()
+        {
+            Console.WriteLine("ModelSBody done.");
+        }
     }
 }

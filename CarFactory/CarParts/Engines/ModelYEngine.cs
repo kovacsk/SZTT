@@ -8,5 +8,9 @@ namespace CarFactory.CarParts.Engines
 {
     class ModelYEngine : Engine
     {
+        public override void Make()
+        {
+            Console.WriteLine("ModelYEngine done.");
+        }
     }
 }

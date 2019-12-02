@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyPlant\ModelSAssemblyPlant.cs" />
+    <Compile Include="AssemblyPlant\ModelYAssemblyPlant.cs" />
     <Compile Include="CarParts\Bodies\Body.cs" />
     <Compile Include="CarParts\Bodies\ModelYBody.cs" />
     <Compile Include="CarParts\Chassies\Chassis.cs" />
     <Compile Include="CarParts\Chassies\ModelSChassis.cs" />
-    <Compile Include="CarParts\Chassies\ModelYBody.cs" />
+    <Compile Include="CarParts\Chassies\ModelYChassis.cs" />
     <Compile Include="CarParts\Engines\Engine.cs" />
     <Compile Include="CarParts\Bodies\ModelSBody.cs" />
     <Compile Include="CarParts\Engines\ModelSEngine.cs" />

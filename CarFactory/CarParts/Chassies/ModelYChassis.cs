@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CarFactory.CarParts.Chassies
 {
-    class ModelYBody : Chassis
+    class ModelYChassis : Chassis
     {
+        public override void Make()
+        {
+            Console.WriteLine("ModelYChassis done.");
+        }
     }
 }

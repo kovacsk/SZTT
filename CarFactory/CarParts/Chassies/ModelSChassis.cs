@@ -8,5 +8,9 @@ namespace CarFactory.CarParts.Chassies
 {
     class ModelSChassis : Chassis
     {
+        public override void Make()
+        {
+            Console.WriteLine("ModelSChassis done.");
+        }
     }
 }
