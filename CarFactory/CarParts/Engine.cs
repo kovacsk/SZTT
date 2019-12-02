@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarFactory
+namespace CarFactory.CarParts
 {
-    class Program
+    class Engine
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
