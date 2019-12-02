@@ -53,8 +53,10 @@
     <Compile Include="CarParts\Engines\ModelSEngine.cs" />
     <Compile Include="CarParts\Engines\ModelYEngine.cs" />
     <Compile Include="Cars\Car.cs" />
+    <Compile Include="IDiagnostics.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="Plants\AssemblyPlant.cs" />
+    <Compile Include="ProductionError.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

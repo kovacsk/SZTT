@@ -21,6 +21,23 @@ namespace CarFactory
         {
             assemblyPlant = ap;
         }
+        public void InitAssemblyElements()
+        {
+            chassis = assemblyPlant.CreateChassis();
+            body = assemblyPlant.CreateBody();
+            engine = assemblyPlant.CreateEngine();
+        }
 
+        public void ProduceCarParts()
+        {
+            chassis.Make();
+            body.Make();
+            engine.Make();
+        }
+
+        public Car AssembleCar(Chassis chassis, Body body, Engine engine)
+        {
+            return new Car(chassis, body, engine);
+        }
     }
 }
