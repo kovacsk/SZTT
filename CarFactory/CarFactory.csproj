@@ -43,15 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarParts\Bodies\Body.cs" />
+    <Compile Include="CarParts\Bodies\ModelYBody.cs" />
+    <Compile Include="CarParts\Chassies\Chassis.cs" />
+    <Compile Include="CarParts\Chassies\ModelSChassis.cs" />
+    <Compile Include="CarParts\Chassies\ModelYChassis.cs" />
+    <Compile Include="CarParts\Engines\Engine.cs" />
+    <Compile Include="CarParts\Bodies\ModelSBody.cs" />
+    <Compile Include="CarParts\Engines\ModelSEngine.cs" />
+    <Compile Include="CarParts\Engines\ModelYEngine.cs" />
     <Compile Include="Cars\Car.cs" />
+    <Compile Include="IDiagnostics.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="Plants\ManufacturingPlant.cs" />
+    <Compile Include="ProductionError.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CarParts\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
