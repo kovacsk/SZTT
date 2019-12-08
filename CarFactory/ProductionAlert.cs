@@ -21,9 +21,9 @@ namespace CarFactory
 
         private ProductionAlert() { }
 
-        public void CarPartError()
+        public void CarPartError(string error)
         {
-            Console.WriteLine("CarPartError");
+            Console.WriteLine(error + "CarPartError");
         }
 
     }

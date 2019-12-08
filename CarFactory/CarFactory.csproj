@@ -46,6 +46,7 @@
     <Compile Include="CarPartException.cs" />
     <Compile Include="CarParts\Bodies\Body.cs" />
     <Compile Include="CarParts\Bodies\ModelYBody.cs" />
+    <Compile Include="CarParts\CarPart.cs" />
     <Compile Include="CarParts\Chassies\Chassis.cs" />
     <Compile Include="CarParts\Chassies\ModelSChassis.cs" />
     <Compile Include="CarParts\Chassies\ModelYChassis.cs" />

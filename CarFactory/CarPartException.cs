@@ -8,9 +8,6 @@ namespace CarFactory
 {
     class CarPartException : Exception
     {
-        public void Exception()
-        {
-            ProductionAlert.GetInstance().CarPartError();
-        }
+        
     }
 }

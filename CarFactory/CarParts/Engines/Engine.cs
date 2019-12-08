@@ -6,16 +6,9 @@ using System.Threading.Tasks;
 
 namespace CarFactory.CarParts
 {
-    abstract class Engine : IDiagnostics
+    abstract class Engine : CarPart, IDiagnostics
     {
-        public bool errorflag = false;
-        public void Diagnostics()
-        {
-            if (errorflag)
-            {
-                throw new CarPartException();
-            }
-        }
-        public abstract void Make();
+
+       
     }
 }

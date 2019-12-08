@@ -28,13 +28,7 @@ namespace CarFactory
             engine = manufacturingPlant.CreateEngine();
         }
 
-        public void ProduceCarPartsWithFailedChassis()
-        {
-            chassis.Make();
-            chassis.errorflag = true;
-            body.Make();
-            engine.Make();
-        }
+        
         public void ProduceCarParts()
         {
             chassis.Make();
@@ -44,16 +38,24 @@ namespace CarFactory
 
         public Car AssembleCar()
         {
-          
+            try
+            {
                 chassis.Diagnostics();
                 body.Diagnostics();
                 engine.Diagnostics();
-
-            
-            
-
+            }
+            catch (CarPartException ex)
+            {
+                ProductionAlert.GetInstance().CarPartError(ex.ToString());
+                
+            }
+                
 
             return new Car(chassis, body, engine);
+            
+            
+
+
         }
     }
 }

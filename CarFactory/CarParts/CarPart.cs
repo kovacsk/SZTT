@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CarFactory.CarParts
 {
-    abstract class Chassis : CarPart , IDiagnostics
+    abstract class CarPart : IDiagnostics
     {
 
+        public abstract void Diagnostics();
         
-        
+        public abstract void Make();
     }
 }
