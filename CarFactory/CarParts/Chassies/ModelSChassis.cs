@@ -10,7 +10,7 @@ namespace CarFactory.CarParts.Chassies
     {
         public override void Diagnostics()
         {
-            ProductionError.GetInstance().CarPartError(); ;
+            ProductionAlert.GetInstance().CarPartError(); ;
         }
 
         public override void Make()

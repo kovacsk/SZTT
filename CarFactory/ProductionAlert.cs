@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace CarFactory
 {
-    class ProductionError
+    class ProductionAlert
     {
-        private static ProductionError instance;
+        private static ProductionAlert instance;
 
-        public static ProductionError GetInstance()
+        public static ProductionAlert GetInstance()
         {
             if (instance == null)
             {
-                instance = new ProductionError();
+                instance = new ProductionAlert();
             }
             return instance;
         }
 
-        protected ProductionError() { }
+        protected ProductionAlert() { }
 
         public void CarPartError()
         {

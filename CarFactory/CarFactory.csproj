@@ -56,7 +56,7 @@
     <Compile Include="IDiagnostics.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="Plants\ManufacturingPlant.cs" />
-    <Compile Include="ProductionError.cs" />
+    <Compile Include="ProductionAlert.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
