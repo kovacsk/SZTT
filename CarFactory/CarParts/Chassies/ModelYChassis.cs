@@ -8,10 +8,7 @@ namespace CarFactory.CarParts.Chassies
 {
     class ModelYChassis : Chassis
     {
-        public override void Diagnostics()
-        {
-            ProductionAlert.GetInstance().CarPartError();
-        }
+        
 
         public override void Make()
         {

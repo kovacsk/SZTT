@@ -8,10 +8,6 @@ namespace CarFactory.CarParts.Engines
 {
     class ModelSEngine : Engine
     {
-        public override void Diagnostics()
-        {
-            ProductionAlert.GetInstance().CarPartError();
-        }
 
         public override void Make()
         {

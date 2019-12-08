@@ -19,7 +19,7 @@ namespace CarFactory
             return instance;
         }
 
-        protected ProductionAlert() { }
+        private ProductionAlert() { }
 
         public void CarPartError()
         {

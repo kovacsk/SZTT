@@ -8,7 +8,19 @@ namespace CarFactory.CarParts
 {
     abstract class Chassis : IDiagnostics
     {
-        public abstract void Diagnostics();
+        public bool errorflag = false;
+        public void Diagnostics()
+        {
+            if (errorflag)
+            {
+                throw new CarPartException();
+            }
+        }
         public abstract void Make();
+
+        public void SetErrorFlagTrue()
+        {
+            errorflag = true;
+        }
     }
 }

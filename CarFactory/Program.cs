@@ -16,15 +16,24 @@ namespace CarFactory
             manufacturing = new ModelYAssemblyPlant();
 
             factory.SetAssemblyPlant(manufacturing);
+            
             factory.InitAssemblyElements();
 
             List<Car> producedcars = new List<Car>();
 
             Console.WriteLine("mennyi auto?");
             string mennyiseg = Console.ReadLine();
+            Console.WriteLine("hanyadik legyen hibás");
+            string fail = Console.ReadLine();
             for (int i = 0; i < Convert.ToInt32(mennyiseg); i++)
             {
                 factory.ProduceCarParts();
+                if (i == Convert.ToInt32(fail))
+                {
+                    factory.ProduceCarPartsWithFailedChassis();
+
+                }
+                
                 var car = factory.AssembleCar();
                 producedcars.Add(car);
             }

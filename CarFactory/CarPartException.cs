@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarFactory.CarParts
+namespace CarFactory
 {
-    class ModelSBody : Body
+    class CarPartException : Exception
     {
-      
-
-        public override void Make()
+        public void Exception()
         {
-            Console.WriteLine("ModelSBody done.");
+            ProductionAlert.GetInstance().CarPartError();
         }
     }
 }
