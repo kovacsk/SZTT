@@ -9,7 +9,13 @@ namespace CarFactory.CarParts
     abstract class CarPart : IDiagnostics
     {
 
-        public abstract void Diagnostics();
+        public  void Diagnostics(string nev,int r)
+        {
+            if (r <= 10)
+            {
+                throw new CarPartException(nev);
+            }
+        }
         
         public abstract void Make();
     }

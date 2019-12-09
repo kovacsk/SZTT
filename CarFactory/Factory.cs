@@ -38,11 +38,13 @@ namespace CarFactory
 
         public Car AssembleCar()
         {
+            Random rnd = new Random(); // A hibakezelés miatt van rá szükség
+          
             try
             {
-                chassis.Diagnostics();
-                body.Diagnostics();
-                engine.Diagnostics();
+                chassis.Diagnostics("Chassis",rnd.Next(1,100));
+                body.Diagnostics("Body",rnd.Next(1,100));
+                engine.Diagnostics("Engine",rnd.Next(1,100));
             }
             catch (CarPartException ex)
             {

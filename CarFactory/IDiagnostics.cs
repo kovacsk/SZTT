@@ -8,6 +8,6 @@ namespace CarFactory
 {
     interface IDiagnostics
     {
-        void Diagnostics();
+        void Diagnostics(string nev,int r);
     }
 }

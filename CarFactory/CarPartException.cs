@@ -8,6 +8,8 @@ namespace CarFactory
 {
     class CarPartException : Exception
     {
-        
+        public CarPartException(string message) : base(message)
+        {
+        }
     }
 }
