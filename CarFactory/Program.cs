@@ -13,8 +13,9 @@ namespace CarFactory
         {
             Factory factory = new Factory();
             ManufacturingPlant manufacturing;
-            manufacturing = new ModelYAssemblyPlant();
-
+            
+            manufacturing = new RoadsterManufacturingPlant();
+            
             factory.SetAssemblyPlant(manufacturing);
             
             factory.InitAssemblyElements();

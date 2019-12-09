@@ -46,14 +46,17 @@
     <Compile Include="CarPartException.cs" />
     <Compile Include="CarParts\Bodies\Body.cs" />
     <Compile Include="CarParts\Bodies\ModelYBody.cs" />
+    <Compile Include="CarParts\Bodies\RoadsterBody.cs" />
     <Compile Include="CarParts\CarPart.cs" />
     <Compile Include="CarParts\Chassies\Chassis.cs" />
     <Compile Include="CarParts\Chassies\ModelSChassis.cs" />
     <Compile Include="CarParts\Chassies\ModelYChassis.cs" />
+    <Compile Include="CarParts\Chassies\RoadsterChassis.cs" />
     <Compile Include="CarParts\Engines\Engine.cs" />
     <Compile Include="CarParts\Bodies\ModelSBody.cs" />
     <Compile Include="CarParts\Engines\ModelSEngine.cs" />
     <Compile Include="CarParts\Engines\ModelYEngine.cs" />
+    <Compile Include="CarParts\Engines\RoadsterEngine.cs" />
     <Compile Include="Cars\Car.cs" />
     <Compile Include="IDiagnostics.cs" />
     <Compile Include="Factory.cs" />

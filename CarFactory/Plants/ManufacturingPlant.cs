@@ -16,7 +16,7 @@ namespace CarFactory.FactoryInterface
         Body CreateBody();
         Engine CreateEngine();
     }
-    class ModelYAssemblyPlant : ManufacturingPlant
+    class ModelYManufacturingPlant : ManufacturingPlant
     {
         public Chassis CreateChassis() { return new ModelYChassis(); }
         public Body CreateBody() { return new ModelYBody(); }
@@ -24,12 +24,18 @@ namespace CarFactory.FactoryInterface
 
 
     }
-    class ModelSAssemblyPlant : ManufacturingPlant
+    class ModelSManufacturingPlant : ManufacturingPlant
     {
         public Chassis CreateChassis() { return new ModelSChassis(); }
         public Body CreateBody() { return new ModelSBody(); }
         public Engine CreateEngine() { return new ModelSEngine(); }
 
     }
+    class RoadsterManufacturingPlant : ManufacturingPlant
+    {
+        public Chassis CreateChassis() { return new RoadsterChassis(); }
+        public Body CreateBody() { return new RoadsterBody(); }
+        public Engine CreateEngine() { return new RoadsterEngine(); }
 
+    }
 }
