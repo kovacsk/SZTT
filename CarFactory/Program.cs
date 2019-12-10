@@ -14,9 +14,29 @@ namespace CarFactory
             Factory factory = new Factory();
             ManufacturingPlant manufacturing;
             
-            manufacturing = new RoadsterManufacturingPlant();
             
-            factory.SetAssemblyPlant(manufacturing);
+            Console.WriteLine("Milyen típus?");
+            Console.WriteLine("[1] Roadster");
+            Console.WriteLine("[2] Model S");
+            Console.WriteLine("[3] Model Y");
+            string tipus = Console.ReadLine();
+            if (tipus == "1")
+            {
+                manufacturing = new RoadsterManufacturingPlant();
+                factory.SetAssemblyPlant(manufacturing);
+            }
+            else if (tipus == "2")
+            {
+                manufacturing = new ModelSManufacturingPlant();
+                factory.SetAssemblyPlant(manufacturing);
+            }
+            else if (tipus == "3")
+            {
+                manufacturing = new ModelYManufacturingPlant();
+                factory.SetAssemblyPlant(manufacturing);
+            }
+            
+
             
             factory.InitAssemblyElements();
 
